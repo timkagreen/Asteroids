@@ -2,6 +2,7 @@ package main;
 
 import javafx.geometry.Point2D;
 import javafx.scene.Node;
+import javafx.scene.shape.Shape;
 
 public class GameObject {
 
@@ -10,8 +11,9 @@ public class GameObject {
 
     private boolean alive = true;
 
-    public GameObject(Node view){
-        this.view = view;
+
+    public GameObject(Shape shape){
+        this.view = shape;
     }
 
     public void update(){
